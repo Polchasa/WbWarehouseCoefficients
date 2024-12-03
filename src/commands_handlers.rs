@@ -26,7 +26,7 @@ pub async fn start_command_handler(bot: Bot, msg: &Message) -> Result<(), Box<dy
 
 pub async fn msg_to_all_command_handler(bot: Bot, msg: &Message, text: String) -> Result<(), Box<dyn Error + Send + Sync>> {
     let username: String = get_username_from_msg(&msg);
-    let admin_username = "polchasaa".to_string(); // Имя пользователя администратора
+    let admin_username = "SET_YOUR_LOGIN_HERE".to_string(); // Имя пользователя администратора
     let command_sender_id = msg.chat.id.0;
 
     if username == admin_username {
